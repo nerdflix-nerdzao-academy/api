@@ -11,7 +11,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "node ace test",
-    "db": "adonis migration:rollback && adonis migration:run && adonis seed"
+    "db": "adonis migration:rollback && adonis migration:run && adonis seed",
+    "heroku": "ENV_SILENT=true node ace migration:run --force"
   },
   "keywords": [
     "adonisjs",
