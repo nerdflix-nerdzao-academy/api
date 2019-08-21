@@ -1,17 +1,13 @@
 'use strict'
-//const CompanyRepository = use('App/Infra/Repositories/Company');
+const ProductsRepository = use('App/Infra/Repositories/Products');
 
 class GetProductCommand {
 
   async execute({ request }) {
     const queries = request.qs;
 
-    //let data = new CompanyRepository().getWhereRawJsonExtract(queries); 
-    return [
-        {
-            "lorem":"ipsum"
-        }
-    ]
+    let data = new ProductsRepository().get(); 
+    return data;
   }
 }
 module.exports = GetProductCommand
