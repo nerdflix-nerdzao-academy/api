@@ -17,9 +17,10 @@
 const Route = use('Route')
 
 Route.get('/', () => {
-  return { greeting: 'Hello world in JSON' }
+    return { nerdflix: 'Hello world in JSON' }
 })
 
 Route.group(() => {
-  Route.get('/products', 'App/Domain/Commands/Products/get.execute')
+    Route.get('/movies', 'App/Domain/Commands/Movies/get.execute')
+    Route.get('/movies-by-type', 'App/Domain/Commands/Movies/getByType.execute')
 }).prefix('api')
