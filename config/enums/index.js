@@ -1,26 +1,17 @@
 'use strict'
 
 const ENUMS = {
-    hierarchy: {
-        admin: 3,
-        client: 1,
-        user: 2,
-    },
     status: {
         actived: {
-            text: 'Ativo',
+            text: 'Pendente',
             id: 2,
         },
         canceled: {
             text: 'Cancelado',
-            id: 6,
-        },
-        expired: {
-            text: 'Expirado',
-            id: 7,
+            id: 3,
         },
         pending: {
-            text: 'Pendente',
+            text: 'Ativo',
             id: 1,
         },
     },
